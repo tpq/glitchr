@@ -1,9 +1,18 @@
 Package: glitchr
-Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
-LazyData: TRUE
+Title: Make GLitcharrrrRt
+Version: 0.0.1.9000
+URL: http://github.com/tpq/glitchr
+BugReports: http://github.com/tpq/glitchr/issues
+Authors@R: c(
+    person("Thomas", "Quinn", email = "contacttomquinn@gmail.com", role = c("aut", "cre"))
+    )
+Description: Make GLitcharrrrRt
+License: GPL-2
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Depends:
+    methods,
+    R (>= 3.2.2)
+Imports:
+    R6
