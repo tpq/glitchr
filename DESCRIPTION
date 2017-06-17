@@ -6,10 +6,9 @@ BugReports: http://github.com/tpq/glitchr/issues
 Authors@R: c(
     person("Thomas", "Quinn", email = "contacttomquinn@gmail.com", role = c("aut", "cre"))
     )
-Description: Make GLitcharrrrRt
+Description: Make GLitcharrrrRt. Make hLitcharrrrRt.
 License: GPL-2
 LazyData: true
-VignetteBuilder: knitr
 RoxygenNote: 6.0.1
 Depends:
     methods,
