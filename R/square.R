@@ -38,3 +38,28 @@ square <- function(img){
 
   return(newimg)
 }
+
+#' Square Image
+#'
+#' If an image is not square, add white space to make it square.
+#'
+#' @param img A directory of .jpe?g files.
+#'
+#' @export
+squaregram <- function(dir = getwd()){
+
+  oldwd <- getwd()
+  setwd(dir)
+  files <- list.files(pattern = "*jpe?g")
+  dir.create("square", showWarnings = FALSE)
+
+  for(file in files){ # For each file in directory
+
+    numTicks <- progress(which(file == files), length(files), numTicks)
+    img <- jpeg::readJPEG(file)
+    newimg <- square(img)
+    jpeg::writeJPEG(newimg, paste0("square/", file))
+  }
+
+  setwd(oldwd)
+}
