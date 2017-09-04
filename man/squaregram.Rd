@@ -7,7 +7,7 @@
 squaregram(dir = getwd())
 }
 \arguments{
-\item{img}{A directory of .jpe?g files.}
+\item{dir}{A directory of *[jJ][pP][eE]?[gG] files.}
 }
 \description{
 If an image is not square, add white space to make it square.

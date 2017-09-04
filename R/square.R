@@ -43,14 +43,14 @@ square <- function(img){
 #'
 #' If an image is not square, add white space to make it square.
 #'
-#' @param img A directory of .jpe?g files.
+#' @param dir A directory of *[jJ][pP][eE]?[gG] files.
 #'
 #' @export
 squaregram <- function(dir = getwd()){
 
   oldwd <- getwd()
   setwd(dir)
-  files <- list.files(pattern = "*jpe?g")
+  files <- list.files(pattern = "*[jJ][pP][eE]?[gG]")
   dir.create("square", showWarnings = FALSE)
 
   for(file in files){ # For each file in directory

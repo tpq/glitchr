@@ -11,6 +11,7 @@ License: GPL-2
 LazyData: true
 RoxygenNote: 6.0.1
 Depends:
+    magick,
     methods,
     R (>= 3.2.2)
 Imports:
