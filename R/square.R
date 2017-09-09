@@ -7,6 +7,12 @@
 #' @export
 square <- function(img){
 
+  # Change 2D images into 3D images
+  if(length(dim(img)) == 2){
+
+    dim(img) <- c(dim(img)[1], dim(img)[2], 1)
+  }
+
   if(dim(img)[2] < dim(img)[1]){ # If image is a portrait
 
     # Create white space for sides
