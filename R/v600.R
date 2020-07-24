@@ -40,7 +40,7 @@ v600_4x5 <- function(dir = getwd(), negate = TRUE){
 
         img.s <- magick::image_crop(img.new, geometry = k %+%
                                       "x" %+% j %+% "+" %+% w_offset %+% "+" %+% h_offset)
-        img.s <- magick::image_normalize(img.s)
+        #img.s <- magick::image_normalize(img.s)
         name <- gsub("\\.[tT][iI][fF][fF]?", "-" %+% s %+% ".tiff", file)
         magick::image_write(img.s, path = paste0("out/", name))
         s <- s+1
