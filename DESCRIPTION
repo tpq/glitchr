@@ -1,6 +1,6 @@
 Package: glitchr
 Title: Make GLitcharrrrRt
-Version: 0.0.2
+Version: 0.0.3
 URL: http://github.com/tpq/glitchr
 BugReports: http://github.com/tpq/glitchr/issues
 Authors@R: c(

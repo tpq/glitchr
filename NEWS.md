@@ -1,3 +1,7 @@
+## glitchr 0.0.3
+---------------------
+* New functions to convert Super8 frame rate and negate
+
 ## glitchr 0.0.2
 ---------------------
 * New functions to crop 120 and 4x5 scans from V600
